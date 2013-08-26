@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' />
+	<title>UTF-8 Test</title>
+</head>
+<body>
+	<h1>Test UTF-8</h1>
+	
+	<h2>unparsed</h2>
+
+	<p>URL: parameter-parser/unparsed.jsp?ürlPäräm=füübär</p>
+
+	<form action="unparsed.jsp?ürlPäräm=füübär" method="post">
+		<input name="förmPäräm" type="text" value="müller" />
+		<input type="hidden" name="encoding" value="UTF-8" />
+		<input type="submit" />
+	</form>
+	
+	<h2>parsed</h2>
+	
+	<p>URL: parameter-parser/parse?ürlPäräm=füübär</p>
+	
+	<form action="parse?füü=bär" method="post">
+		<input name="förmPäräm" type="text" value="müller" />
+		<input type="hidden" name="encoding" value="UTF-8" />
+		<input type="submit" />
+	</form>
+	
+</body>
+</html>
